@@ -17,7 +17,7 @@ export default function Sidebar(props) {
               <li className="menu-title">
                 <span>Main Menu</span>
               </li>
-              <li className="submenu">
+              <li className="submenu" style={{ cursor: "pointer" }}>
                 <a onClick={() => handleMovePage("Dashboard")}>
                   <i className="feather-grid" /> <span>Dashboard</span>
                   {/* <span className="menu-arrow" /> */}
@@ -34,12 +34,22 @@ export default function Sidebar(props) {
                   aria-labelledby="headingFour"
                   data-bs-parent="#custom-accordion-one"
                 >
-                  <div className="card-body">
+                  <div className="card-body" style={{ cursor: "pointer" }}>
                     <li>
-                      <a className="link-hover" onClick={()=>handleMovePage("Login")}>Teachers List</a>
+                      <a
+                        className="link-hover"
+                        onClick={() => handleMovePage("TeacherList")}
+                      >
+                        Teachers List
+                      </a>
                     </li>
                     <li>
-                      <a className="link-hover">Teachers Add</a>
+                      <a
+                        className="link-hover"
+                        onClick={() => handleMovePage("TeacherAdd")}
+                      >
+                        Teachers Add
+                      </a>
                     </li>
                   </div>
                 </div>

@@ -57,10 +57,10 @@ export default function Login(props) {
             </div>
             <div className="login-right">
               <div className="login-right-wrap">
-                <h1>Welcome to Preskool</h1>
-                <p className="account-subtitle">
+                <h1>Welcome to School Portal</h1>
+                {/* <p className="account-subtitle">
                   Need an account? <a href={false}>Sign Up</a>
-                </p>
+                </p> */}
                 <h2>Sign in</h2>
                 <Form noValidate validated={validated} onSubmit={handleSubmit}>
                   <div class="col-12">
@@ -110,13 +110,13 @@ export default function Login(props) {
                     </Row>
                   </div>
                   <div className="forgotpass">
-                    <div className="remember-me">
+                    {/* <div className="remember-me">
                       <label className="custom_check mr-2 mb-0 d-inline-flex remember-me">
                         Remember me
                         <input type="checkbox" name="radio" />
                         <span className="checkmark" />
                       </label>
-                    </div>
+                    </div> */}
                     <a href={false}>Forgot Password?</a>
                   </div>
                   <div className="form-group">
